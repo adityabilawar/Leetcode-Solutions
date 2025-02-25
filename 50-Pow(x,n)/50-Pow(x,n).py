@@ -14,13 +14,14 @@ class Solution(object):
             return 1
 
         negative_power = (n < 0)
-        
+
         n = abs(n)
 
         result = 1.0
         current_product = x
 
         while n > 0: 
+            # if n is odd multiple result by current product
             if n % 2 == 1:
                 result *= current_product
                 n -= 1
